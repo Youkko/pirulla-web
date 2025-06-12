@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Canal do Pirulla',
     description: 'Paleontólogo, formado em biologia, mestre e doutor em zoologia, com ênfase em paleontologia. Em seu canal no YouTube, aborda temas nas áreas de ciências, meio ambiente, religião e política.',
-    url: 'https://pirulla.com.br/',
+    url: 'https://pirulla.mages.dev/',
     siteName: 'Canal do Pirulla',
     images: [
       {
-        url: 'https://pirulla.com.br/logo.png',
+        url: 'https://pirulla.mages.dev/logo.png',
         width: 500,
         height: 500,
         alt: 'Canal do Pirulla',
