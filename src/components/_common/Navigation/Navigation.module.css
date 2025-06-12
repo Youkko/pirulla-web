@@ -1,0 +1,187 @@
+.menucontainer {
+  position: fixed;
+  top: 50%;
+  left: .5rem;
+  width: 60px;
+  height: calc(100% - 1rem);
+  transform: translateY(-50%);
+  color: var(--text-menubar);
+  border: 1px solid var(--text-menubar-button);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.menucontainer.expanded {
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.navWrapper {
+  position: relative;
+  width: 90%;
+  height: calc(100% - 75px);
+  padding-top: 15px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.navWrapper.expanded {
+  height: calc(100% - 160px);
+  transition: all 0.3s ease;
+}
+
+.menubar {
+  color: var(--text-menubar-button);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--background-menubar-a) 25%, transparent) 0%,
+    color-mix(in srgb, var(--background-menubar-b) 25%, transparent) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.expandButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 5px 5px 0 0;
+  color: var(--text-menubar-button-hover);
+  background: var(--background-menubar-button);
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.expandButton:hover {
+  color: var(--text-menubar-button);
+  background: var(--background-menubar-button-hover);
+}
+
+/* Estilos para o conteúdo do Sidebar */
+.menubar > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  overflow-x: hidden;
+}
+
+.buttonBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: calc(100% - 75px); /* Altura total menos o botão de expansão */
+  gap: 10px; /* Espaçamento igual entre os botões */
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.buttonContent.expanded {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px !important;
+  height: 40px !important;
+  pointer-events: none !important;
+  object-fit: contain !important;
+  overflow: hidden;
+}
+
+.icon svg {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.logoPiSmall {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 60px;
+  height: auto;
+}
+
+.logoPiFull {
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+}
+
+/* Estilos gerais */
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.navItem.expanded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navItem > * {
+  cursor: pointer;
+}
+
+/* Estilo para o botão em modo expandido */
+.menucontainer.expanded .navItem {
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Estado hover */
+.navItem:hover {
+  color: var(--text-menubar-button-hover);
+  cursor: pointer;
+}
+
+.navItem:hover .icon {
+  filter: brightness(1.2); /* Opcional: adiciona um efeito adicional ao ícone */
+}
+
+/* Item ativo */
+.active {
+  color: var(--text-menubar-button-hover) !important;
+  font-weight: bold;
+}

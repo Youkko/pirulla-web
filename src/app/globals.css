@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "tailwindcss";
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --background-color-a: #3c6e62;
+  --background-color-b: #2d5249;
+  --background-color-c: #182c27;
+  --background-menubar-a: #e9dbbe;
+  --background-menubar-b: #e4cc80;;
+  --background-menubar-button: #e9dbbe;
+  --background-menubar-button-hover: #2d5249;
+  --text: #ffffff;
+  --text-inverted: #000000;
+  --text-menubar-button: #e9dbbe;
+  --text-menubar-button-hover: #2d5249;
+  --link-hover: #e9dbbe;
+  --link-hover-inverted: #2d5249;
+}
+
+[data-theme="dark"] {
+  --primary: #3b82f6;
+  --secondary: #1e40af;
+  --background-color-a: #1f2937;
+  --background-color-b: #1a62c0;
+  --background-color-c: #1a62c0;
+  --accent: #f59e0b;
+  --text: #f9fafb;
+  --text-menubar: #dddddd;
+  --text-menubar-button: #3f3f3f;
+  --logo-link-color: #f9fafb;
+  --shadow-color: #cccccc;
+  --bg-menubar: #222222;
+  --bg-menubar-button: #dddddd;
+  --bg-menucontainer-color-a: #4d4d4d;
+  --bg-menucontainer-color-b: #0d0d33;
+  --faded-circle-bg: #cfe5ff;
+  --gradient-circle-bg: #cfe5ff;
+  --home-card-title-font-color: #dddddd;
+  --home-card-font-color: #f59e0b;
+  --home-card-bg-color: #1f2937;
+  --home-card-borders-color: #ffffff;
+  --home-card-icon-bg-color: #818181;
+  --home-card-icon-color: #ffffff;
+  --home-imagecard-label-color: #1f2937;
+  --home-imagecard-label-bg-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--background-color-a) 100%, transparent) 0%, 
+    color-mix(in srgb, var(--background-color-b) 100%, transparent) 30%, 
+    color-mix(in srgb, var(--background-color-b) 100%, transparent) 70%, 
+    color-mix(in srgb, var(--background-color-c) 100%, transparent) 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-color-a) var(--background-color-c);
+  font-family: "Open Sans", sans-serif;
+}
+
+.rootComponent {
+  margin-left: 60px;
+}
