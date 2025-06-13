@@ -38,7 +38,7 @@ const Ajuda: React.FC<Props> = ({id}) => {
             <Image src="/img/vakinha.svg" width={408} height={140} alt="Vakinha para o Pirulla" title="Vakinha para o Pirulla" />
           </a>
         </div>
-        <p>Outra forma de contribuição é tornando-se membro do canal.</p>
+        <p>Outra forma de contribuição é tornando-se membro do canal.&nbsp;</p>
         <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL6YDp0v-GYFWXRrlG7EE0B3plFqdb_3Zj&si=x_0y2pPLs40UK144" target="_blank">esta playlist</a> tocando.</p>
       </div>
     </div>    
