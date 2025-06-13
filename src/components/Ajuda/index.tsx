@@ -20,6 +20,15 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p>Assim que houver informações relevantes que possam ser compartilhadas, atualizaremos por aqui de forma responsável.</p>
         <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
       </div>
+      <h1 className={`${styles.h1}`}>Atualização &#8212; 13/06/2025</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>Gostaríamos de comunicar que o Pirulla recebeu alta da UTI, mas segue hospitalizado, em acompanhamento médico. Ele está estável e já iniciou as primeiras etapas da reabilitação, que será uma parte essencial de sua recuperação. Neste momento, também passa por uma nova bateria de exames, pois a equipe médica ainda busca identificar a causa do AVC ocorrido em 25 de maio.</p>
+        <p>Sabemos o quanto ele é querido por tanta gente e, por isso, queremos reforçar que todo o apoio recebido até aqui, como mensagens, homenagens, visualizações e doações, tem sido fundamental.</p>
+        <p>Para quem quiser contribuir com sua recuperação e oferecer suporte à família e à equipe que trabalha com ele, está no ar uma vaquinha recorrente. Os recursos arrecadados ajudarão a custear o tratamento, os cuidados de reabilitação, a continuidade dos projetos e a estabilidade financeira neste período de afastamento.</p>
+        <p>A campanha conta com o apoio direto da equipe do Vakinha. Além de garantir os cuidados que ele precisa, essa mobilização ajuda a manter vivo o trabalho de divulgação científica que o Pirulla construiu com tanto empenho ao longo dos anos.</p>
+        <p>Seguimos confiantes na recuperação e, quando houver novas informações relevantes, atualizaremos por aqui de forma responsável e respeitosa.</p>
+        <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
       <h1 className={`${styles.h1}`}>Como você pode ajudar</h1>
       <div className={`${styles.textBlock}`}>
         <p>Se puder contribuir financeiramente, acesse a vaquinha criada através do botão abaixo:</p>
