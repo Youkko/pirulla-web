@@ -5,7 +5,7 @@ import { useSections } from "@/context";
 import styles from "./Navigation.module.css"
 
 const Navigation: React.FC<MenuProps> = ({
-  activeSection: initialActiveSection = 'home'
+  activeSection: initialActiveSection = 'ajuda'
 }) => {
   const { sections, titles } = useSections();
   const [activeSection, setActiveSection] = useState(initialActiveSection);
@@ -75,10 +75,27 @@ const Navigation: React.FC<MenuProps> = ({
       const normalColor = style.getPropertyValue('--text-menubar-button').trim();
       const hoverColor = style.getPropertyValue('--text-menubar-button-hover').trim();
       
-      targetGroup.setAttribute(
-        'stroke',
-        isActive(sections[index]) || isHover ? hoverColor : normalColor
-      );
+      const currentStroke = targetGroup.getAttribute('stroke');
+      const currentFill = targetGroup.getAttribute('fill');
+
+      console.log(`${targetGroup.id}.fill = ${currentFill}`);
+      console.log(`${targetGroup.id}.stroke = ${currentStroke}`);
+
+      if (currentFill != null)
+      {
+        targetGroup.setAttribute(
+          'fill',
+          isActive(sections[index]) || isHover ? hoverColor : normalColor
+        );
+      }
+
+      if (currentStroke != null)
+      {
+        targetGroup.setAttribute(
+          'stroke',
+          isActive(sections[index]) || isHover ? hoverColor : normalColor
+        );
+      }
     };
   
     // Tenta aplicar imediatamente

@@ -1,29 +1,16 @@
 "use client";
-
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-//import { SectionComponents, ThemeName, ThemeContextType } from '@/types';
 import { ThemeName, ThemeContextType } from '@/types';
 import { themes } from "@/Styles/theme"
-/*import Home from '@/Components/Home';
-import Sobre from '@/Components/Sobre';
-import Galeria from '@/Components/Galeria';
-import Livros from '@/Components/Livros';
-import Contato from '@/Components/Contato';*/
-
-/*const components: SectionComponents = {
-  home: Home,
-  sobre: Sobre,
-  galeria: Galeria,
-  livros: Livros,
-  contato: Contato
-}*/
 
 const defaultValues = {
-  //sections: Object.keys(components),
-  sections: ['home', 'sobre', 'livros', 'galeria', 'contato'],
-  titles: ['Home', 'Sobre', 'Livros', 'Galeria', 'Contato'],
-  defaultTitle: "LondonLink",
-  //components,
+  //sections: ['ajuda', 'sobre', 'livros', 'galeria', 'contato'],
+  //titles: ['Ajuda', 'Sobre', 'Livros', 'Galeria', 'Contato'],
+  //sections: ['ajuda', 'canal'],
+  //titles: ['Ajuda', 'Canal'],
+  sections: ['ajuda'],
+  titles: ['Ajuda'],
+  defaultTitle: "Canal do Pirulla",
 };
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);

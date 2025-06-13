@@ -7,11 +7,11 @@ import { Props } from '@/interfaces';
 
 // Carregamento dinâmico com lazy loading para cada componente
 const componentMap = {
-  home: dynamic<Props>(() => import('@/Components/Home')),
-  sobre: dynamic<Props>(() => import('@/Components/Sobre')),
-  galeria: dynamic<Props>(() => import('@/Components/Galeria')),
-  livros: dynamic<Props>(() => import('@/Components/Livros')),
-  contato: dynamic<Props>(() => import('@/Components/Contato')),
+  ajuda: dynamic<Props>(() => import('@/components/Ajuda')),
+  canal: dynamic<Props>(() => import('@/Components/Canal')),
+  //galeria: dynamic<Props>(() => import('@/Components/Galeria')),
+  //livros: dynamic<Props>(() => import('@/Components/Livros')),
+  //contato: dynamic<Props>(() => import('@/Components/Contato')),
 } as {
   [key: string]: React.ComponentType<Props>;
 };
@@ -44,11 +44,11 @@ const SectionObserver = ({ section }: { section: string }) => {
   );
 };
 
-export default function Home() {
+export default function Ajuda() {
   const { sections } = useSections();
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="mx-auto px-4">
       {sections.map((section) => (
         <SectionObserver key={section} section={section} />
       ))}

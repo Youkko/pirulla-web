@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -7,15 +8,21 @@
   --background-color-a: #3c6e62;
   --background-color-b: #2d5249;
   --background-color-c: #182c27;
+  --background-color-canal-a: #925c73;
+  --background-color-canal-b: #623247;
+  --background-color-canal-c: #3b1d2a;
   --background-menubar-a: #e9dbbe;
   --background-menubar-b: #e4cc80;;
   --background-menubar-button: #e9dbbe;
   --background-menubar-button-hover: #2d5249;
+  --background-topic-title: #e9dbbe;
+  --text-topic-title: #2d5249;
   --text: #ffffff;
   --text-inverted: #000000;
   --text-menubar-button: #e9dbbe;
   --text-menubar-button-hover: #2d5249;
-  --link-hover: #e9dbbe;
+  --link: #ffaa00;
+  --link-hover: #ffee00;
   --link-hover-inverted: #2d5249;
 }
 

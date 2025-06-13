@@ -1,0 +1,158 @@
+.component {
+  height: 100vh;
+
+  background-image: 
+    url("/img/quina_es.svg"),
+    url("/img/quina_ds.svg"),
+    url("/img/quina_ei.svg"),
+    url("/img/quina_di.svg");
+
+  background-position: 
+    top left,
+    top right,
+    bottom left,
+    bottom right;
+  
+  background-repeat: no-repeat;
+
+  background-size: 
+    clamp(75px, 25vw, 150px) auto,
+    clamp(75px, 25vw, 150px) auto,
+    clamp(75px, 25vw, 150px) auto,
+    clamp(75px, 25vw, 150px) auto;
+  
+  padding-top: clamp(25px, 15vw, 50px);
+  padding-bottom: clamp(50px, 15vw, 100px);
+}
+
+.h1 {
+  font-size: clamp(16px, 4vw, 30px);
+}
+
+.tituloBloco {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(20px, 4vw, 50px);
+  line-height: clamp(20px, 4vw, 50px);
+  margin-left: 1cap;
+  padding: .5cap;
+  padding-left: clamp(10px, 4vw, 10%);
+  text-shadow:
+  clamp(5px, 2vw, 15px)
+  clamp(5px, 2vw, 15px)
+  clamp(5px, 2vw, 15px)
+  black;
+  margin-bottom: 2cap;
+}
+
+.textBlock {
+  font-size: clamp(14px, 2.5vw, 20px);
+  margin: 1cap;
+  text-align: justify;
+}
+
+.textBlock p {
+  margin-bottom: 1cap;
+}
+
+.textBlock p a {
+  color: var(--link);
+  font-weight: bold;
+}
+
+.textBlock p a:hover {
+  color: var(--link-hover);
+}
+
+.paragrafo {
+  margin-top: 25px;
+  line-height: 25px;
+}
+
+.shadow {
+  text-shadow: 3px 3px 4px var(--shadow-color);
+}
+
+.bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+.left {
+  text-align: left;
+}
+
+.mid {
+  text-align: center;
+}
+
+
+.right {
+  text-align: right;
+}
+
+.vantagensContainer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.objetivosContainer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.cardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.titlesContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.mainTitle {
+  flex: 1;
+  max-width: 50%;
+  font-size: 2cap;
+  line-height: 1.5cap;
+  color: var(--home-card-font-color);
+}
+
+.secondaryTitle {
+  flex: 1;
+  max-width: 50%;
+  font-size: 1.2cap;
+  color: var(--home-card-title-font-color);
+}
+
+.imageCardsContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1rem 0;
+  left: 200px;
+  width: calc(100% - 200px);
+}
+
+.imageCardsContainer::-webkit-scrollbar {
+  display: none;
+}

@@ -54,7 +54,7 @@ export default function RootLayout({
         <ThemeProvider>
           <ThemeApplier />
           <header style={{ display: "flex", justifyContent: "flex-end" }}>
-            <Navigation activeSection="home" />
+            <Navigation activeSection="ajuda" />
           </header>
           {children}
         </ThemeProvider>
