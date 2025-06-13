@@ -11,11 +11,8 @@ const Ajuda: React.FC<Props> = ({id}) => {
         </a>
       </div>
       <div className={`${styles.textBlock}`}>
-        <p>Comunicamos que nosso amigo Pirulla sofreu um AVC (acidente vascular cerebral) na noite do domingo, 25 de maio de 2025, em sua casa, em São Paulo.</p>
-        <p>Ele foi prontamente atendido e está internado em uma UTI (unidade de terapia intensiva), recebendo os cuidados necessários.</p>
-        <p>Apesar do quadro ser estável, ainda inspira atenção, e não há, por enquanto, uma estimativa segura sobre sua recuperação.</p>
-        <p>Diante dessa situação, a comunidade de divulgadores científicos e amigos próximos estão se mobilizando para apoiar sua família e ajudar a manter seus canais em funcionamento, durante esse período de afastamento.</p>
-        <p>Pedimos que evitem especulações e respeitem o tempo de recuperação e a privacidade do Pirulla e de seus familiares. Assim que houver informações consistentes que possam ser compartilhadas, atualizaremos por aqui.</p>
+        <p>Comunicamos que nosso amigo Pirulla sofreu um AVC (acidente vascular cerebral) na noite do domingo, 25 de maio de 2025, em sua casa, em São Paulo. Ele foi prontamente atendido e está internado em uma UTI (unidade de terapia intensiva), recebendo os cuidados necessários. Apesar do quadro ser estável, ainda inspira atenção, e não há, por enquanto, uma estimativa segura sobre sua recuperação.</p>
+        <p>Diante dessa situação, a comunidade de divulgadores científicos e amigos próximos estão se mobilizando para apoiar sua família e ajudar a manter seus canais em funcionamento, durante esse período de afastamento. Pedimos que evitem especulações e respeitem o tempo de recuperação e a privacidade do Pirulla e de seus familiares. Assim que houver informações consistentes que possam ser compartilhadas, atualizaremos por aqui.</p>
         <p>Todas as informações serão divulgadas nos canais oficiais: no Canal do Pirulla, <a href="https://www.youtube.com/@Pirulla25/community" target="_blank">na aba comunidades</a>, e nas redes d’Os Três Elementos [<a href="https://www.instagram.com/ostreselementospodcast/" target="_blank">instagram</a>] [<a href="https://www.youtube.com/@ostreselementos/community" target="_blank">youtube</a>].</p>
         <p>Agradecemos, desde já, todo o apoio e solidariedade que temos recebido.</p>
         <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
