@@ -5,11 +5,6 @@ const Ajuda: React.FC<Props> = ({id}) => {
 	return (
     <div id={id} className={`${styles.component}`}>
       <h1 className={`${styles.h1} ${styles.tituloBloco}`}>O Pirulla PRECISA da sua ajuda!</h1>
-      <div className={`${styles.vakinha}`}>
-        <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">
-          <img src="/img/vakinha.svg" width={408} height={140} title="Vakinha para o Pirulla" />
-        </a>
-      </div>
       <div className={`${styles.textBlock}`}>
         <p>Comunicamos que nosso amigo Pirulla sofreu um AVC (acidente vascular cerebral) na noite do domingo, 25 de maio de 2025, em sua casa, em São Paulo. Ele foi prontamente atendido e está internado em uma UTI (unidade de terapia intensiva), recebendo os cuidados necessários. Apesar do quadro ser estável, ainda inspira atenção, e não há, por enquanto, uma estimativa segura sobre sua recuperação.</p>
         <p>Diante dessa situação, a comunidade de divulgadores científicos e amigos próximos estão se mobilizando para apoiar sua família e ajudar a manter seus canais em funcionamento, durante esse período de afastamento. Pedimos que evitem especulações e respeitem o tempo de recuperação e a privacidade do Pirulla e de seus familiares. Assim que houver informações consistentes que possam ser compartilhadas, atualizaremos por aqui.</p>
@@ -24,6 +19,17 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p>Pedimos que continuem respeitando a privacidade dele e de sua família neste momento.</p>
         <p>Assim que houver informações relevantes que possam ser compartilhadas, atualizaremos por aqui de forma responsável.</p>
         <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
+      <h1 className={`${styles.h1}`}>Como você pode ajudar</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>Se puder contribuir financeiramente, acesse a vaquinha criada através do botão abaixo:</p>
+        <div className={`${styles.vakinha}`}>
+          <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">
+            <img src="/img/vakinha.svg" width={408} height={140} title="Vakinha para o Pirulla" />
+          </a>
+        </div>
+        <p>Outra forma de contribuição é tornando-se membro do canal.</p>
+        <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL6YDp0v-GYFWXRrlG7EE0B3plFqdb_3Zj&si=x_0y2pPLs40UK144" target="_blank">esta playlist</a> tocando.</p>
       </div>
     </div>    
 	)
