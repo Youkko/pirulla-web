@@ -1,5 +1,6 @@
 import { Props } from "@/interfaces"
 import styles from "./Ajuda.module.css"
+import Image from 'next/image';
 
 const Ajuda: React.FC<Props> = ({id}) => {
 	return (
@@ -34,7 +35,7 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p>Se puder contribuir financeiramente, acesse a vaquinha criada através do botão abaixo:</p>
         <div className={`${styles.vakinha}`}>
           <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">
-            <img src="/img/vakinha.svg" width={408} height={140} title="Vakinha para o Pirulla" />
+            <Image src="/img/vakinha.svg" width={408} height={140} alt="Vakinha para o Pirulla" title="Vakinha para o Pirulla" />
           </a>
         </div>
         <p>Outra forma de contribuição é tornando-se membro do canal.</p>
