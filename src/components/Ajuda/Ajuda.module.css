@@ -80,6 +80,24 @@
   border: 0;
 }
 
+.qr
+{
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1cap;
+  color: var(--link);
+  text-align: center;
+}
+
+.qr img
+{
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px black;
+}
+
 .textBlock {
   font-size: clamp(14px, 2.5vw, 20px); 
   margin: 1cap;
