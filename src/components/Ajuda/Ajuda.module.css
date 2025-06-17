@@ -82,7 +82,7 @@
 
 .qr
 {
-  width: 400px;
+  width: clamp(250px, 30vw, 400px);
   margin: 0 auto;
   margin-bottom: 1cap;
   color: var(--link);
@@ -99,7 +99,7 @@
 }
 
 .textBlock {
-  font-size: clamp(14px, 2.5vw, 20px); 
+  font-size: clamp(14px, 2.5vw, 20px);
   margin: 1cap;
   text-align: justify;
 }
