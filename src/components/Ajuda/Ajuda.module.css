@@ -84,7 +84,7 @@
 {
   width: clamp(250px, 30vw, 400px);
   margin: 0 auto;
-  margin-bottom: 1cap;
+  margin-bottom: 25px;
   color: var(--link);
   text-align: center;
 }
