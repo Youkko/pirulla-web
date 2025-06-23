@@ -67,7 +67,7 @@ const Ajuda: React.FC<Props> = ({id}) => {
           </a>
         </div>
         <p>Tornando-se membro do <a className={`${styles.bold}`} href="https://www.youtube.com/@Pirulla25" target="_blank">Canal do Pirulla</a>, do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> e assinando o canal de <a className={`${styles.bold}`} href="https://www.youtube.com/@CortesdoPirullaOficial" target="_blank">Cortes do Pirulla</a>.</p>
-        <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos do canal do Pirulla ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL6YDp0v-GYFWXRrlG7EE0B3plFqdb_3Zj&si=x_0y2pPLs40UK144" target="_blank">esta playlist</a> tocando.</p>
+        <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos do canal do Pirulla ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL2VViescWCYG4Ebta1WpW8gkmlUdygGbZ&si=1AGRJXgC8E7oN0KT" target="_blank">esta playlist</a> tocando.</p>
         <p>Maratonar os vídeos do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> também ajuda, pois o projeto é mais uma fonte de renda do Pirulla. Sugerimos deixar <a href="https://www.youtube.com/playlist?list=PLY_qEheajeSrg9xpHj8EWvxxwClsG7YA1" target="_blank">esta playlist</a> tocando.</p>
       </div>
     </div>    
