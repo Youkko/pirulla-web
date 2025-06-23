@@ -31,15 +31,16 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
       </div>
       <h1 className={`${styles.h1}`}>Como você pode ajudar</h1>
-      <div className={`${styles.textBlock}`}>
+      <div className={`${styles.textBlock} ${styles.formas}`}>
         <p>Se puder contribuir financeiramente, acesse a vaquinha criada através do botão abaixo:</p>
         <div className={`${styles.vakinha}`}>
           <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">
             <Image src="/img/vakinha.svg" width={408} height={140} alt="Vakinha para o Pirulla" title="Vakinha para o Pirulla" />
           </a>
         </div>
-        <p>Outra forma de contribuição é tornando-se membro do canal.&nbsp;</p>
-        <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL6YDp0v-GYFWXRrlG7EE0B3plFqdb_3Zj&si=x_0y2pPLs40UK144" target="_blank">esta playlist</a> tocando.</p>
+        <p>Tornando-se membro do <a className={`${styles.bold}`} href="https://www.youtube.com/@Pirulla25" target="_blank">Canal do Pirulla</a>, do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> e assinando o canal de <a className={`${styles.bold}`} href="https://www.youtube.com/@CortesdoPirullaOficial" target="_blank">Cortes do Pirulla</a>.</p>
+        <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos do canal do Pirulla ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL6YDp0v-GYFWXRrlG7EE0B3plFqdb_3Zj&si=x_0y2pPLs40UK144" target="_blank">esta playlist</a> tocando.</p>
+        <p>Maratonar os vídeos do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> também ajuda, pois o projeto é mais uma fonte de renda do Pirulla. Sugerimos deixar <a href="https://www.youtube.com/playlist?list=PLY_qEheajeSrg9xpHj8EWvxxwClsG7YA1" target="_blank">esta playlist</a> tocando.</p>
       </div>
     </div>    
 	)

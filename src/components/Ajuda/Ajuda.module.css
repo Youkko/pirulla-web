@@ -90,6 +90,10 @@
   margin-bottom: 1cap;
 }
 
+.formas p::before {
+  content: "🡺 ";
+}
+
 .textBlock p a {
   color: var(--link);
   font-weight: bold;
