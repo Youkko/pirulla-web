@@ -1,9 +1,24 @@
+import React, { useState, useCallback } from "react"
 import { Props } from "@/interfaces"
 import styles from "./Ajuda.module.css"
 import Image from 'next/image';
 
 const Ajuda: React.FC<Props> = ({id}) => {
-	return (
+	const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = useCallback(() => {
+    const textToCopy = "00020126440014BR.GOV.BCB.PIX0122pirulla@vakinha.com.br5204000053039865802BR5916TRANSFEERA IP SA6009Sao Paulo62070503***6304D4C2";
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000); // Reset após 2 segundos
+      })
+      .catch(err => {
+        console.error('Falha ao copiar texto: ', err);
+      });
+  }, []);
+
+  return (
     <div id={id} className={`${styles.component}`}>
       <h1 className={`${styles.h1} ${styles.tituloBloco}`}>O Pirulla PRECISA da sua ajuda!</h1>
       <div className={`${styles.textBlock}`}>
@@ -36,6 +51,19 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <div className={`${styles.vakinha}`}>
           <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">
             <Image src="/img/vakinha.svg" width={408} height={140} alt="Vakinha para o Pirulla" title="Vakinha para o Pirulla" />
+          </a>
+        </div>
+        <span className={`${styles.bold}`}>IMPORTANTE:</span> por motivos contábeis, doações feitas através do site Vakinha tem um valor mínimo de R$ 25,00. Para doar valores menores, use a chave pix <span className={`${styles.bold}`}>pirulla@vakinha.com.br</span> (QR Code abaixo). Lembrando que agora você pode programar a transferência via pix para ser recorrente, selecionando a periodicidade no próprio aplicativo do banco, antes de finalizar a transferência.<br />
+        <div className={`${styles.qr}`}>
+          <a href="#"
+								onClick={(e) => {
+									e.preventDefault();
+									handleCopy();
+								}}
+								style={{ cursor: 'pointer' }}
+          >
+            {isCopied ? 'Código Pix Copia-e-cola copiado!' : 'Toque no QR code para obter o código pix copia-e-cola'}<br /><br />
+            <Image src="/img/qr.png" width={500} height={500} alt="QR Code do pix pirulla@vakinha.com.br" title="QR Code do pix pirulla@vakinha.com.br" />
           </a>
         </div>
         <p>Tornando-se membro do <a className={`${styles.bold}`} href="https://www.youtube.com/@Pirulla25" target="_blank">Canal do Pirulla</a>, do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> e assinando o canal de <a className={`${styles.bold}`} href="https://www.youtube.com/@CortesdoPirullaOficial" target="_blank">Cortes do Pirulla</a>.</p>
