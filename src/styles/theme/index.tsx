@@ -1,6 +1,6 @@
 export const themes = {
-  light: {
-    name: "Claro",
+  verde: {
+    name: "Verde",
     colors: {
       primary: "#2563eb",
       secondary: "#1e40af",
@@ -26,8 +26,8 @@ export const themes = {
       homeCardIconColor: "#dddddd",
     },
   },
-  dark: {
-    name: "Escuro",
+  blue: {
+    name: "Azul",
     colors: {
       primary: "#3b82f6",
       secondary: "#1e40af",

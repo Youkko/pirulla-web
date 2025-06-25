@@ -6,10 +6,10 @@ import { themes } from "@/Styles/theme"
 const defaultValues = {
   //sections: ['ajuda', 'sobre', 'livros', 'galeria', 'contato'],
   //titles: ['Ajuda', 'Sobre', 'Livros', 'Galeria', 'Contato'],
-  //sections: ['ajuda', 'canal'],
-  //titles: ['Ajuda', 'Canal'],
-  sections: ['ajuda'],
-  titles: ['Ajuda'],
+  sections: ['ajuda', 'canal'],
+  titles: ['Ajuda', 'Canal'],
+  //sections: ['ajuda'],
+  //titles: ['Ajuda'],
   defaultTitle: "Canal do Pirulla",
 };
 
@@ -17,7 +17,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 const Context = createContext(defaultValues);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [themeName, setThemeName] = useState<ThemeName>("light");
+  const [themeName, setThemeName] = useState<ThemeName>("verde");
 
   useEffect(() => {
     // Verificar se há um tema salvo no localStorage
