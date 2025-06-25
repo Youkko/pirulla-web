@@ -57,8 +57,6 @@ const Ajuda: React.FC<Props> = ({id}) => {
           <iframe
             className={`${styles.mapa}`}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.066728119129!2d-46.6696839240623!3d-23.53130237882055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce581cc919d821%3A0x85a077986c7aa027!2sR.%20Dr.%20C%C3%A2ndido%20Espinheira%2C%20812%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005004-000!5e0!3m2!1sen!2sbr!4v1750826845676!5m2!1sen!2sbr"
-            width="400"
-            height="300"
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"></iframe>

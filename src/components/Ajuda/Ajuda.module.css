@@ -153,6 +153,8 @@
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 20px;
+  width: clamp(290px, 20vw, 400px);
+  height: 300px;
 }
 
 .vantagensContainer {
