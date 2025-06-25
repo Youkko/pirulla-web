@@ -7,7 +7,7 @@ export type SectionComponents = {
 
 export type ThemeName = keyof typeof themes;
 
-export type Theme = typeof themes.light;
+export type Theme = typeof themes.verde;
 
 export type ThemeContextType = {
   theme: Theme;
