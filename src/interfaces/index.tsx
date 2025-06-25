@@ -58,3 +58,10 @@ export interface SideBarProps {
 	isActive: (sectionName: string) => boolean;
 	scrollToSection: (sectionId: string) => void;
 }
+
+export interface Video {
+	title: string;
+	link: string;
+	thumbnail: string;
+	duration: string;
+};
