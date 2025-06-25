@@ -139,6 +139,24 @@
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
+.sevenkingslogo {
+  margin: 0 auto;
+  width: clamp(300px, 20vw, 600px);
+  height: auto;;
+}
+
+.mapa {
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: clamp(290px, 20vw, 400px);
+  height: 300px;
+}
+
 .vantagensContainer {
   width: 100%;
   padding: 2rem 0;

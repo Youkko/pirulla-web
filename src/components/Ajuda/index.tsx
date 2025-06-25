@@ -45,6 +45,27 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p>Seguimos confiantes na recuperação e, quando houver novas informações relevantes, atualizaremos por aqui de forma responsável e respeitosa.</p>
         <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
       </div>
+      <h1 className={`${styles.h1}`}>Atualização &#8212; 21/06/2025</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>O quadro do Pirulla permanece estável. Ele segue hospitalizado, em reabilitação, e passando por uma nova bateria de exames, já que a equipe médica ainda busca compreender a causa do AVC ocorrido em 25 de maio.</p>
+        <p>Agradecemos, mais uma vez, por todo o apoio, carinho e mobilização que temos recebido. Além da vaquinha oficial que continua no ar, queremos convidar quem estiver em São Paulo para participar de uma ação solidária muito especial:</p>
+        <p className={`${styles.bold} ${styles.center}`}>Hamburgada Solidária pelo Pirulla</p>
+        <span><Image className={`${styles.sevenkingslogo}`} src="/img/7k.svg" width={0} height={0} alt="Logotipo da Seven Kings" title="Seven Kings" /></span>
+        <p className={`${styles.bold} ${styles.center}`}>📍 Seven Kings - unidade Perdizes (SP)</p>
+        <p className={`${styles.bold} ${styles.center}`}>📅 25/06/2025, a partir das 19h</p>
+        <div>
+          <iframe
+            className={`${styles.mapa}`}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.066728119129!2d-46.6696839240623!3d-23.53130237882055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce581cc919d821%3A0x85a077986c7aa027!2sR.%20Dr.%20C%C3%A2ndido%20Espinheira%2C%20812%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005004-000!5e0!3m2!1sen!2sbr!4v1750826845676!5m2!1sen!2sbr"
+            allowFullScreen={false}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p className={`${styles.center}`}>Um burguer exclusivo será servido, e toda a renda das vendas será revertida para a família do Pirulla, ajudando a custear sua recuperação.</p>
+        <p className={`${styles.center}`}>É uma oportunidade de se reunir com amigos, celebrar a ciência e apoiar de forma concreta alguém que marcou a vida de tanta gente com seu trabalho.</p>
+        <p className={`${styles.center}`}>Muito obrigado por continuarem com a gente nessa corrente.</p>
+        <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
       <h1 className={`${styles.h1}`}>Como você pode ajudar</h1>
       <div className={`${styles.textBlock} ${styles.formas}`}>
         <p>Se puder contribuir financeiramente, acesse a vaquinha criada através do botão abaixo:</p>
@@ -70,7 +91,7 @@ const Ajuda: React.FC<Props> = ({id}) => {
         <p>Adicionalmente (ou se não puder contribuir financeiramente), maratonar os vídeos do canal do Pirulla ajuda a manter o canal vivo para o algoritmo. Sugerimos deixar <a href="https://youtube.com/playlist?list=PL2VViescWCYG4Ebta1WpW8gkmlUdygGbZ&si=1AGRJXgC8E7oN0KT" target="_blank">esta playlist</a> tocando.</p>
         <p>Maratonar os vídeos do canal <a className={`${styles.bold}`} href="https://www.youtube.com/@ostreselementos" target="_blank">Os Três Elementos</a> também ajuda, pois o projeto é mais uma fonte de renda do Pirulla. Sugerimos deixar <a href="https://www.youtube.com/playlist?list=PLY_qEheajeSrg9xpHj8EWvxxwClsG7YA1" target="_blank">esta playlist</a> tocando.</p>
       </div>
-    </div>    
+    </div>
 	)
 }
 
