@@ -24,7 +24,7 @@ const Ajuda: React.FC<Props> = ({id}) => {
 
       <h1 className={`${styles.h1}`}>Atualização &#8212; 27/06/2025</h1>
       <div className={`${styles.textBlock}`}>
-        <p>Gostaríamos de comunicar que, na última quarta-feira (26 de Junho), o Pirulla foi transferido para um centro de reabilitação. Embora ainda siga como paciente do hospital e tenha exames pendentes, essa etapa simboliza um avanço importante, voltado para a recuperação funcional com apoio especializado.</p>
+        <p>Gostaríamos de comunicar que, na última quarta-feira (25 de Junho), o Pirulla foi transferido para um centro de reabilitação. Embora ainda siga como paciente do hospital e tenha exames pendentes, essa etapa simboliza um avanço importante, voltado para a recuperação funcional com apoio especializado.</p>
         <p>Ele já iniciou as terapias de reabilitação, que incluem fisioterapia, fonoaudiologia e terapia ocupacional, e está sendo acompanhado de perto por uma equipe multiprofissional. Aos poucos, vai retomando seu jeitinho: já começaram as primeiras reclamações.</p>
         <p>Mais uma vez, agradecemos imensamente por todo o apoio, carinho e generosidade. <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">A vaquinha oficial</a> continua ativa para quem quiser contribuir com o tratamento e a manutenção dos projetos durante esse período.</p>
         <p>Seguimos confiantes e esperançosos.</p>
