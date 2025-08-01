@@ -22,6 +22,18 @@ const Ajuda: React.FC<Props> = ({id}) => {
     <div id={id} className={`${styles.component}`}>
       <h1 className={`${styles.h1} ${styles.tituloBloco}`}>O Pirulla PRECISA da sua ajuda!</h1>
 
+      <h1 className={`${styles.h1}`}>Atualização &#8212; 01/08/2025</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>Nesta sexta-feira, 01 de agosto, o Pirulla saiu do centro de reabilitação e seguirá o tratamento em casa. A partir de agora, ele contará com uma equipe especializada atuando diretamente em domicílio, com fisioterapia, fonoaudiologia, terapia ocupacional, psicologia e acompanhamento nutricional.</p>
+        <p>A evolução tem sido constante, e o comprometimento dele com as atividades diárias é admirável. Está se dedicando com seriedade e bom humor à reabilitação, inclusive nos corrigindo sempre que deixamos escapar algum erro de português ou inglês. Ele segue com seu senso crítico afiado (e o apetite intacto).</p>
+        <p>Momento fofo do mês: quando o Ruas compartilhou uma foto da sua bebê. O Pirulla olhou com atenção, pensou por um instante e disse: “Bonitinha!”</p>
+        <p>A jornada continua, e seguimos confiantes, gratos e cercados por uma rede de apoio que tem feito toda a diferença.</p>
+        <p>A <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">campanha oficial para apoiar o tratamento</a> segue ativa.</p>
+        <p>E pra quem quiser continuar acompanhando e fortalecendo o canal, todo sábado, às 19h, tem live no Canal do Pirulla, com convidados especiais da divulgação científica.</p>
+        <p>Obrigado por continuarem conosco. Cada mensagem, visualização e contribuição tem um impacto real.</p>
+        <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
+      
       <h1 className={`${styles.h1}`}>Atualização &#8212; 27/06/2025</h1>
       <div className={`${styles.textBlock}`}>
         <p>Gostaríamos de comunicar que, na última quarta-feira (25 de Junho), o Pirulla foi transferido para um centro de reabilitação. Embora ainda siga como paciente do hospital e tenha exames pendentes, essa etapa simboliza um avanço importante, voltado para a recuperação funcional com apoio especializado.</p>
