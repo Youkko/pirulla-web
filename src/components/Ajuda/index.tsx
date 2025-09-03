@@ -22,6 +22,16 @@ const Ajuda: React.FC<Props> = ({id}) => {
     <div id={id} className={`${styles.component}`}>
       <h1 className={`${styles.h1} ${styles.tituloBloco}`}>O Pirulla PRECISA da sua ajuda!</h1>
 
+      <h1 className={`${styles.h1}`}>Atualização &#8212; 03/09/2025</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>Na madrugada do dia 2 de setembro, o Pirulla apresentou um episódio de mal-estar e foi prontamente atendido em uma unidade de saúde. O quadro foi estabilizado com segurança e os primeiros exames indicaram que não houve comprometimentos relevantes.</p>
+        <p>Ele está novamente em casa, sob cuidados profissionais e seguindo com seu processo de reabilitação com o apoio contínuo da família, da equipe médica e de amigos próximos.</p>
+        <p>Mais uma vez, agradecemos as inúmeras mensagens de carinho, respeito e apoio que continuam chegando de diferentes cantos do Brasil e do mundo. Elas têm feito toda a diferença nesse momento.</p>
+        <p>Como temos feito até agora, nos comprometemos a divulgar novas informações sempre que for necessário.</p>
+        <p>Para evitar a propagação de boatos ou informações imprecisas, pedimos que apenas os canais oficiais sejam considerados fontes confiáveis sobre sua saúde.</p>
+        <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
+
       <h1 className={`${styles.h1}`}>Atualização &#8212; 01/08/2025</h1>
       <div className={`${styles.textBlock}`}>
         <p>Nesta sexta-feira, 01 de agosto, o Pirulla saiu do centro de reabilitação e seguirá o tratamento em casa. A partir de agora, ele contará com uma equipe especializada atuando diretamente em domicílio, com fisioterapia, fonoaudiologia, terapia ocupacional, psicologia e acompanhamento nutricional.</p>
