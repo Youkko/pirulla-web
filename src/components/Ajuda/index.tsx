@@ -22,6 +22,21 @@ const Ajuda: React.FC<Props> = ({id}) => {
     <div id={id} className={`${styles.component}`}>
       <h1 className={`${styles.h1} ${styles.tituloBloco}`}>O Pirulla PRECISA da sua ajuda!</h1>
 
+      <h1 className={`${styles.h1}`}>Atualização &#8212; 28/11/2025</h1>
+      <div className={`${styles.textBlock}`}>
+        <p>Desde o AVC sofrido em maio, Pirulla tem se dedicado integralmente à recuperação. Após uma primeira fase intensa de terapias, ele voltou ao centro de reabilitação no dia 9 de novembro para uma nova rodada de atividades, com novos desafios terapêuticos e avaliações de progresso, uma etapa que só foi possível graças aos avanços conquistados nos meses anteriores.</p>
+        <p>Esse retorno foi recebido com entusiasmo pela família e a equipe que o acompanha, já que indica não apenas comprometimento, mas também avanços concretos em sua recuperação. A previsão é que ele retorne para casa no dia 28 de novembro, encerrando mais esse ciclo com bons resultados.</p>
+        <p>Mesmo durante o tratamento, o Pirulla segue atento ao que acontece ao seu redor. Ele acompanha à distância as decisões e os bastidores do canal e continua supervisionando os trabalhos d&apos;Os três elementos (com o olhar crítico e detalhista de sempre).</p>
+        <p>A causa exata do AVC segue sendo investigada. Apesar de uma série de exames realizados até o momento, os médicos ainda não chegaram a uma conclusão definitiva.</p>
+        <p>Mas nada disso atrapalha o foco na reabilitação. Ele continua firme, com uma equipe dedicada ao lado e apoio constante da família, dos amigos e, claro, de toda a comunidade que acompanha o trabalho dele.</p>
+        <p>Em uma das conversas recentes, perguntamos o que ele gostaria que o público soubesse sobre tudo isso. A resposta veio no estilo Pirulla: &quot;Que merda!&quot;. E sobre o futuro? Ele resumiu com a sabedoria de quem já encarou muita coisa: &quot;Viver a vida&quot;.</p>
+        <p>A jornada de recuperação continua. Seguimos com ele, passo a passo, com paciência, muito amor e a certeza de que cada avanço é uma vitória.</p>
+        <p>A <a href="https://www.vakinha.com.br/vaquinha/pirulla" target="_blank">campanha oficial para apoiar o tratamento</a> segue ativa.</p>
+        <p>E pra quem quiser continuar acompanhando, todo sábado, às 19h, tem live no <a href="https://www.youtube.com/@Pirulla25" target="_blank">Canal do Pirulla</a>, com convidados especiais da divulgação científica.</p>
+        <p>Agradecemos todas as mensagens, doações, gestos e palavras. Eles continuam fazendo a diferença.</p>
+        <p className={`${styles.bold} ${styles.right}`}>&#8212; Equipe d’Os Três Elementos</p>
+      </div>
+
       <h1 className={`${styles.h1}`}>Atualização &#8212; 03/09/2025</h1>
       <div className={`${styles.textBlock}`}>
         <p>Na madrugada do dia 2 de setembro, o Pirulla apresentou um episódio de mal-estar e foi prontamente atendido em uma unidade de saúde. O quadro foi estabilizado com segurança e os primeiros exames indicaram que não houve comprometimentos relevantes.</p>
